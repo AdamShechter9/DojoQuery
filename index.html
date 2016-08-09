@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DojoQuery Test Page</title>
+	<script type="text/javascript" src="DojoQuery.js"></script>
+	<style type="text/css">
+		.maindiv {
+			width: 50%;
+			margin: auto;
+			background-color: lightgreen;
+			text-align: center;
+			padding: 30px;
+		}
+		.btn {
+			padding: 5px 15px;
+			margin: 20px;
+		}
+		#click_btn {
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="maindiv">
+		<button class="btn" id="click_btn">Click Me</button>
+	</div>
+	<script type="text/javascript">
+		$Dojo("click_btn").click( () => { console.log("i've been clicked!"); }).hover( () => { console.log("Kirk in"); }, () => { console.log("Kirk out"); });
+	</script>
+</body>
+</html>
